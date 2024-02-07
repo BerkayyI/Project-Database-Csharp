@@ -1,4 +1,4 @@
-#C-Project-Database
+**C-Project-Database**
 #A school project in C#, working with databases.
 
 Steps:
