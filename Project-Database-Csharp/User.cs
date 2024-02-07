@@ -1,10 +1,10 @@
-namespace Project_Database_Csharp.User
+namespace Project_Database_Csharp
 {
     public class User {
         // Private setters for the attributes
         public string Username { get; private set; }
         public DateTime Birthday { get; private set; }
-        public string Name { get; private set; }
+        public string? Name { get; private set; }
         public string Password { get; private set; }
 
         // Constructor
@@ -29,8 +29,9 @@ namespace Project_Database_Csharp.User
         }
 
         // GetName method
-        public string GetName() {
-            return Name;
+        public string GetName()
+        {
+            return Name ?? "No name provided";
         }
 
         // GetBirthday method
